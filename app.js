@@ -12,6 +12,7 @@ import authRoutes from "./src/routes/user.routes.js"
 //Global middleware
 app.use(express.json());
 app.use(express.urlencoded({extended : true}));
+app.use(cors());
 
 app.use("/api/v1/users",authRoutes)
 
